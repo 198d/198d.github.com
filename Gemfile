@@ -1,4 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'jekyll'
-gem 'heroku'
+group :development do
+  gem 'jekyll'
+  gem 'heroku'
+end
+
+group :production do
+  gem 'rack-jekyll'
+end
+
