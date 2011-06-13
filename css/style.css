@@ -94,9 +94,18 @@ body {
   margin-top:10px;
 }
 
-.post-wrapper {
+.post-wrapper, #posts {
   width: 450px;
   margin: 0 auto;
+}
+#posts td.post-date {
+  text-align:right;
+}
+#posts td {
+  padding: 10px;
+}
+#posts td {
+  width:50%
 }
 .post-wrapper h2 {
   font-weight: normal;

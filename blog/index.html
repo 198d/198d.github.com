@@ -4,8 +4,11 @@ title: blog
 class: blog
 ---
 {% include logo.html %}
-<ul id='posts'>
+<table border=0 id='posts'>
   {% for post in site.posts %}
-  <li>{{ post.title }} - {{ post.url }}</li>
+  <tr>
+    <td class='post-date'>{{ post.date | date:'%A %B %d, %Y' }}</td>
+    <td class='post-link'><a href='{{ post.url }}'>{{ post.title }}</a></td>
+  </tr>
   {% endfor %}
-</div>
+</table>
