@@ -1,0 +1,11 @@
+---
+layout: default
+title: blog
+class: blog
+---
+{% include logo.html %}
+<ul id='posts'>
+  {% for post in site.posts %}
+  <li>{{ post.title }} - {{ post.url }}</li>
+  {% endfor %}
+</div>
