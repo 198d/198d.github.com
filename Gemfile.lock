@@ -1,41 +1,32 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
+    builder (3.0.0)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
-    configuration (1.2.0)
     directory_watcher (1.4.0)
     fast-stemmer (1.0.0)
-    heroku (2.2.8)
-      launchy (>= 0.3.2)
-      rest-client (~> 1.6.1)
-      term-ansicolor (~> 1.0.5)
     jekyll (0.10.0)
       classifier (>= 1.3.1)
       directory_watcher (>= 1.1.1)
       liquid (>= 1.9.0)
       maruku (>= 0.5.9)
-    launchy (0.4.0)
-      configuration (>= 0.0.5)
-      rake (>= 0.8.1)
+    jekyll-s3 (0.0.3)
+      aws-s3
     liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     mime-types (1.16)
-    rack (1.3.0)
-    rack-jekyll (0.3.5)
-      jekyll
-      rack
-    rake (0.8.7)
-    rest-client (1.6.3)
-      mime-types (>= 1.16)
     syntax (1.0.0)
-    term-ansicolor (1.0.5)
+    xml-simple (1.0.16)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  heroku
   jekyll
-  rack-jekyll
+  jekyll-s3
