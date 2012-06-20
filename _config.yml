@@ -1,2 +1,2 @@
-exclude: [ Gemfile, Gemfile.lock ]
+exclude: [ Gemfile, Gemfile.lock, less, nineteeneightd.watchr, CNAME]
 permalink: /blog/:year/:month/:day/:title
