@@ -28,3 +28,29 @@
 
 // Utility classes
 @import "bootstrap/utilities.less"; // Has to be last to override when necessary
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100);
+
+.nav { 
+  width: 737px;
+  margin: 150px auto 0 auto;
+  h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  a h1 {
+    font-family: "Josefin Sans", @sansFontFamily;
+    font-weight: 100;
+  }
+  li a {
+    padding-right: 24px;
+    padding-left: 24px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 70px;
+  }
+  #nine { color: @logoblue; }
+  #teen { color: @logored;  }
+  #eight { color: @logopurple; }
+  #d { color: @logogreen; }
+}

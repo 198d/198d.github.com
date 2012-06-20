@@ -15,16 +15,16 @@
 
   <body>
 
-    <div class="container">
+    <div class="container {{ page.title }}">
       <ul class="nav nav-pills">
         <li>
-          <h1 id='logo'>
-            <a href='/'>
+          <a href='/'>
+            <h1>
               <span id='nine'>nine</span><span id='teen'>teen</span><span id='eight'>eight</span><span id='d'>d</span>
-            </a>
-          </h1>
+            </h1>
+          </a>
         </li>
-        <li><a href='/resume/'>resume</a></li>
+        <li><a href='/resume/'>résumé</a></li>
         <li><a href='/projects/'>projects</a></li>
       </ul>
       {{ content }}
