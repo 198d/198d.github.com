@@ -22,6 +22,7 @@
 
 // Base CSS
 @import "bootstrap/type.less";
+@import "bootstrap/tables.less";
 
 // Components: Nav
 @import "bootstrap/navs.less";
@@ -29,21 +30,19 @@
 // Utility classes
 @import "bootstrap/utilities.less"; // Has to be last to override when necessary
 
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100);
+@import url("http://fonts.googleapis.com/css?family=Josefin+Sans:100|Cutive");
 
+.container { padding-top: 10px; }
 .nav {
   margin-top: 150px;
+  padding-left: 130px;
   h1 {
     font-size: 70px;
     line-height: 70px;
   }
-  a h1 {
-    font-family: "Josefin Sans", @sansFontFamily;
-    font-weight: 100;
-  }
+  a h1 { font-weight: 100; }
   li a {
-    padding-right: 57px;
-    padding-left: 58px;
+    font-family: "Josefin Sans", @sansFontFamily;
     font-weight: 100;
     font-size: 30px;
     line-height: 70px;
@@ -53,3 +52,38 @@
   #eight { color: @logopurple; }
   #d { color: @logogreen; }
 }
+
+.fname, .lname {
+  font-family: Cutive, @serifFontFamily;
+}
+.fname {
+  font-size: 96px;
+  line-height: 96px;
+}
+.lname {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+.contact {
+  margin-bottom: 0;
+  margin-top:2px;
+  address { margin-bottom: 0; }
+  tr:first-child td:first-child { border-right: 1px solid @tableBorder; }
+  td {
+    color: @linkColor;
+    border-top: none;
+    border-bottom: 1px solid @tableBorder;
+    font-family: "Josefin Sans", @sansFontFamily;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 20px;
+    address {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}
+
