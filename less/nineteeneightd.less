@@ -58,6 +58,7 @@
     border-bottom: 1px solid lighten(@gray, 35%);
     .name, .position {
       font-family: "Josefin Slab", @serifFontFamily;
+      font-weight: normal;
     }
     .name {
       font-size: 67px;
@@ -96,5 +97,44 @@
         border-bottom: 1px solid lighten(@gray, 35%);
       }
     }
+  }
+  .section {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Josefin Sans", @sansFontFamily;
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid lighten(@gray, 35%);
+    h3, h4 {
+      font-family: "Josefin Slab", @serifFontFamily;
+      font-size: 34px;
+      line-height: 34px;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+    h4 {
+      margin-bottom:0;
+      font-size: 24px;
+    }
+    .experience .job:first-child { margin-top: 0; }
+    .job {
+      margin-top: 15px;
+      .company-title, .location-dates { margin-bottom: 5px; }
+      .company-title {
+        .span4 { text-align: right; }
+        line-height: 34px;
+        font-size: 24px;
+        font-family: "Josefin Slab", @serifFontFamily;
+      }
+      .location-dates {
+        .span4 { text-align: right; }
+        color: lighten(@gray, 35%);
+      }
+    }
+  }
+  .education {
+    border-bottom: none;
+    h4 { margin-bottom: 5px; }
+    p { color: lighten(@gray, 35%); }
   }
 }
