@@ -30,6 +30,9 @@
 // Utility classes
 @import "bootstrap/utilities.less"; // Has to be last to override when necessary
 
+@import "bootstrap/responsive-utilities.less";
+@import "bootstrap/responsive-767px-max.less";
+
 @import url("http://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab:300,300italic");
 
 .nav {
@@ -53,6 +56,7 @@
 }
 
 .resume {
+  .mobile { display: none; }
   .heading {
     margin-top: 10px;
     border-bottom: 1px solid lighten(@gray, 35%);
@@ -136,5 +140,62 @@
     border-bottom: none;
     h4 { margin-bottom: 5px; }
     p { color: lighten(@gray, 35%); }
+  }
+}
+
+@media (max-width: 480px) {
+  .resume {
+    .screen { display: none; }
+    .mobile { display: block; }
+    .heading {
+      .name {
+        font-size: 65px;
+        line-height: 65px;
+      }
+      .position {
+        font-size: 40px;
+        line-height: 55px;
+      }
+      .contact {
+        .email, .phone, address {
+          padding: 15px 0;
+          line-height: 24px;
+        }
+        .email { width: 219px; }
+        .phone { width: 220px; }
+      }
+    }
+    .section {
+      .job {
+        .company-title {
+          .span4 { text-align: left; }
+        }
+        .location-dates {
+          .span4 { text-align: left; }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .resume {
+    .heading {
+      .name {
+        font-size: 41px;
+        line-height: 41px;
+      }
+      .position {
+        font-size: 26px;
+        line-height: 30px;
+      }
+      .contact {
+        .email { width: 139px; }
+        .phone { width: 140px; }
+      }
+    }
+    .section {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
