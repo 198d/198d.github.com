@@ -1,0 +1,12 @@
+.resume .mobile {
+  display: none;
+}
+.resume h1,
+.resume h2,
+.resume h4 {
+  margin: 0;
+  padding: 0;
+}
+.resume .education p {
+  margin: 0;
+}
